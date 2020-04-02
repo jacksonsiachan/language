@@ -36,7 +36,7 @@ def process(second_list):
 
 def final_report(dic):  
     list = sorted(dic.items(), key=lambda kv:(kv[1], kv[0]), reverse=True)
-    header = ["Languages", "View"]
+    header = ["Languages", "Users"]
     now = datetime.datetime.now() 
     path = os.path.expanduser('~') + '/Desktop/' + str(now) + 'languages.csv'  
     with open(path, 'w') as language:
